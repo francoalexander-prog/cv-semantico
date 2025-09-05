@@ -256,3 +256,24 @@ a:focus, button:focus, input:focus {
 p, ul, li {
   text-align: left;
 }
+
+.container { max-width: 1200px; margin: 0 auto; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+
+@media (max-width: 600px) {
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .avatar { width: 72px; height: 72px; }
+  .wave-container { display: none; }
+  .grid { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header-inner { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .avatar { width: 96px; height: 96px; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1358px) {
+  .container { max-width: 1200px; margin: 0 auto; }
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
