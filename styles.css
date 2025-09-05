@@ -207,28 +207,6 @@ body{
   }
 }
 
-
-/* Skip link visible al enfocar */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #22c55e;
-  color: #fff;
-  padding: 8px;
-  z-index: 1000;
-  transition: top 0.3s;
-}
-.skip-link:focus {
-  top: 10px;
-}
-
-/* Foco visible en enlaces */
-a:focus {
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
-}
-
 /* Navegación principal */
 .nav-list {
   list-style: none;
@@ -276,4 +254,8 @@ p, ul, li {
 @media (min-width: 1358px) {
   .container { max-width: 1200px; margin: 0 auto; }
   .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+a {
+  color: var(--accent);
 }
