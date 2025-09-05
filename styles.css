@@ -259,3 +259,10 @@ p, ul, li {
 a {
   color: var(--accent);
 }
+ 
+.card:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
