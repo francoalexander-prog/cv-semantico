@@ -247,3 +247,12 @@ a:focus {
 .nav-list a:focus {
   color: var(--accent);
 }
+
+a:focus, button:focus, input:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+p, ul, li {
+  text-align: left;
+}
